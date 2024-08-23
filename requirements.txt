@@ -1,0 +1,9 @@
+
+pandas
+requests
+geopandas
+rasterio
+blosc
+rioxarray
+asyncssh
+matplotlib

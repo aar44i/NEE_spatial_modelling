@@ -1,7 +1,68 @@
-## Advancing data-driven modelling for robust spatial assessment of carbon fluxes using earth observation and ground-based measurements
+# NEE Spatial Modeling
+
+This repository contains the code and resources for NEE spatial modeling using various data processing and machine learning techniques.
+
+Map demonstrate results of modeling
+
+![NEE](/plots/SOME_MAP.png)
+
+## Project Structure
+
+- **Dockerfile**: Defines the Docker image for the project.
+- **run_in_docker.sh**: Script to build and run the Docker container.
+- **requirements.txt**: Lists the Python dependencies required for the project.
+- **NEE_for_github.ipynb**: Jupyter Notebook for NEE spatial modeling.
 
 
-Effective spatial monitoring of carbon fluxes is crucial for implementing climate change mitigation and adaptation measures. This study develops an advanced machine learning (ML) pipeline to assess integral carbon fluxes at landscape scales using a combination of Earth observation data and ground-based carbon flux measurements.
-In research, we aimed to address the main limitations of spatial assessments based on ML approaches due to their ignorance of the physical nature of environmental processes. 
-Specifically, we propose a training pipeline to ensure the robustness of prediction outcomes and the generalisation capability of the trained model, introducing both influential features' and a ground truth data pick-up approach. This results in a robust mapping tool for inference with associated uncertainty estimations, which we support with feature importance analysis based on Shapley values to add interpretability and physical meaning to the understanding of the ML outcomes. 
-Our approach utilizes data from 168 FLUXNET stations, NASA POWER meteorological reanalysis, and MODIS satellite observations to train a CatBoost gradient boosting model specifically efficient to account for categorical data, which is, in the study case, the landscape types. The resulting model achieves an R² of 0.76 in predicting monthly values of Net Ecosystem Exchange (NEE) and demonstrates high spatial and temporal coherence when applied to regional mapping. This methodology opens new possibilities for comprehensive spatial assessments of terrestrial ecosystem carbon dynamics, facilitates comparison of carbon balance estimation methodologies, and aids in identifying potential areas for climate projects and new monitoring sites.
+
+## Getting Started
+
+### Prerequisites
+
+- Docker
+- Bash
+
+### Installation
+
+1. **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    cd <repository-directory>
+    ```
+
+2. **Build and run the Docker container:**
+    ```bash
+    ./run_in_docker.sh
+    ```
+
+### Running the Jupyter Notebook
+
+After running the Docker container, open your browser and navigate to `http://localhost:8888`. Use the token `SecretToken` to access the Jupyter Notebook.
+
+## Dependencies
+
+The project depends on several Python packages listed in the `requirements.txt` file:
+
+- pandas
+- requests
+- geopandas
+- rasterio
+- catboost
+- shap
+- rioxarray
+- matplotlib
+
+## Usage
+
+Open the **NEE_model_3.0.ipynb** Jupyter Notebook to explore the NEE spatial modeling code and perform various data processing and machine learning tasks.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [CatBoost](https://catboost.ai/)
+- [Optuna](https://optuna.org/)
+- [Scikit-learn](https://scikit-learn.org/)
+- [Plotly](https://plotly.com/)
