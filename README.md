@@ -37,7 +37,7 @@ Map demonstrate results of modeling
 
 ### Running the Jupyter Notebook
 
-After running the Docker container, open your browser and navigate to `http://localhost:16404`. Use the token `SecretToken` to access the Jupyter Notebook.
+After running the Docker container, open your browser and navigate to `http://localhost:8888`. Use the token `SecretToken` to access the Jupyter Notebook.
 
 ## Dependencies
 
@@ -47,14 +47,14 @@ The project depends on several Python packages listed in the `requirements.txt` 
 - requests
 - geopandas
 - rasterio
-- blosc
+- catboost
+- shap
 - rioxarray
-- asyncssh
 - matplotlib
 
 ## Usage
 
-Open the **NEE_for_github.ipynb** Jupyter Notebook to explore the NEE spatial modeling code and perform various data processing and machine learning tasks.
+Open the **NEE_model_3.0.ipynb** Jupyter Notebook to explore the NEE spatial modeling code and perform various data processing and machine learning tasks.
 
 ## License
 
