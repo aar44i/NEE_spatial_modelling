@@ -2,18 +2,17 @@
 
 This repository contains the code and resources for NEE spatial modeling using various data processing and machine learning techniques.
 
-Map demonstrate results of modeling
+Map demonstrates results of modeling
 
-![NEE](/plots/SOME_MAP.png)
+![NEE](/plots/map.png)
 
 ## Project Structure
 
 - **Dockerfile**: Defines the Docker image for the project.
 - **run_in_docker.sh**: Script to build and run the Docker container.
 - **requirements.txt**: Lists the Python dependencies required for the project.
-- **NEE_for_github.ipynb**: Jupyter Notebook for NEE spatial modeling.
-
-
+- **notebooks**: Folder with Jupyter Notebooks.
+- **notebooks/NEE_model_3.0.ipynb**: Jupyter Notebook for NEE spatial modeling.
 
 ## Getting Started
 
@@ -25,12 +24,14 @@ Map demonstrate results of modeling
 ### Installation
 
 1. **Clone the repository:**
+
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/aar44i/NEE_spatial_modelling.git
+    cd NEE_spatial_modelling
     ```
 
 2. **Build and run the Docker container:**
+
     ```bash
     ./run_in_docker.sh
     ```
