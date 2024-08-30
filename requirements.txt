@@ -7,3 +7,5 @@ blosc
 rioxarray
 asyncssh
 matplotlib
+ipython
+jupyter

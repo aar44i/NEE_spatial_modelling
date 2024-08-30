@@ -5,7 +5,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 ENV TZ=Europe/Moscow
 RUN apt-get update -y --fix-missing \
-    && apt-get install -y curl g++ unixodbc-dev gnupg2 libffi-dev libc6-dev libpq-dev libssl-dev openjdk-11-jre-headless --no-install-recommends \
+    && apt-get install -y curl g++ \
     && apt-get install -y binutils libproj-dev gdal-bin libgdal-dev -y\    
     && apt-get -y clean
 
