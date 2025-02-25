@@ -4,7 +4,7 @@ This repository contains the code and resources for NEE spatial modeling using v
 
 Map demonstrates results of modeling
 
-![scheme](/research scheme.pdf)
+![plot](/research scheme.png)
 
 ## Project Structure
 
