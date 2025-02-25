@@ -2,7 +2,13 @@
 
 This repository contains the code and resources for NEE spatial modeling using various data processing and machine learning techniques.
 
-![plot](/research scheme.png)
+<!-- ![image](research scheme.png) -->
+
+<div align="center">
+	<img width="500" height="700" src="research scheme.png" alt="Awesome">
+	<br>
+</div>
+
 
 ## Project Structure
 
